@@ -1,41 +1,35 @@
-# CrowdProj project
+# 202306-ok-marketplace
 
-This is an experimental project to create an Open Source social network aka Marketplace in a highly modular style.
+Учебный проект курса
+[Kotlin Backend Developer](https://otus.ru/lessons/kotlin/?int_source=courses_catalog&int_term=programming).
+Поток курса 2023-06.
 
-## Roadmap
-
-| Group / Subsystem           | Microservice                                     | Purpose                                                                                                   | Contributors                               | Completeness | 
-|-----------------------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------|
-| Ads                         | [Ads](https://github.com/crowdproj/crowdproj-ad) | User ads control. Users dispose texd descriptions of their demands or supplies to be met one another      | [@svok](https://github.com/svok)           | 20%          |
-| Product                     | Product Model                                    |                                                                                                           | [@azatgt1996](https://github.com/azatgt1996)                                           |              |
-|                             | Product Group                                    |                                                                                                           | [@phaeton03](https://github.com/phaeton03) | 75%          |
-|                             | Product Property                                 |                                                                                                           | [@Riafka](https://github.com/Riafka)       | 70%          |
-|                             | Product Property Value                           |                                                                                                           | [@ann-kiy](https://github.com/ann-kiy)     |              |
-| References                  | Units                                            |                                                                                                           | [@fooglish](https://github.com/fooglish)   | 70%          |
-| Comments                    | Comment                                          |                                                                                                           | [@StellaLupus](https://github.com/StellaLupus)|              |
-| Ratings                     | Ratings                                          |                                                                                                           | [@shvetson](https://github.com/shvetson)   | 75%          |
-|                             | Vote                                             |                                                                                                           |                                            |              |
-| Calendar / Resource planner |                                                  | Calendar allows to plan access to some limited resources like computers, labour, time, etc.               |                                            |              |
-|                             | Calendar Resources                               | Reference for the available resources                                                                     |                                            |              |
-|                             | Calendar Events                                  | Demands for the resources                                                                                 |                                            |              |
-| Library                     |                                                  | Library is a subsystem for management of different resources: video, music, documents, custom files, etc. |                                            |              |
-|                             | Documents                                        | Reference of stored documents                                                                             |                                            |              |
-|                             | Stored Resources                                 | Resources attached to the document                                                                        |                                            |              |
-|                             |                                                  |                                                                                                           |                                            |              |
+Vote -- система, предоставляющая возможность создавать голосование для чего-либо. Задача системы -- предоставить возможность
+интегрировать в любую другую систему с любым набором подпунктов для верного подсчета голосов в реальном времени.
 
 
-## Structure
+## Визуальная схема фронтенда
 
-### Component diagram
-![Component diagram of the CrowdProj](imgs/crowdproj-components.drawio.png)
+![Макет фронта](imgs/front.png)
 
-### Entities
-![ER diagram of the CrowdProj](imgs/crowdproj-ER.drawio.png)
+![Макет фронта для создания голосования](imgs/front-for-create.png)
 
-## Contacts
+## Документация
 
-Telegram groups for discussions: 
+1. Маркетинг
+    1. [Заинтересанты](./docs/01-marketing/01-stakeholders.md)
+    2. [Целевая аудитория](./docs/01-marketing/02-target-audience.md)
+    3. [Конкурентный анализ](./docs/01-marketing/03-concurrency.md)
+    4. [Анализ экономики](./docs/01-marketing/04-economy.md)
+    5. [Пользовательские истории](./docs/01-marketing/05-user-stories.md)
+2. DevOps
+    1. [Схема инфраструктуры](./docs/02-devops/01-infrastruture.md)
+    2. [Схема мониторинга](./docs/02-devops/02-monitoring.md)
+3. Тесты
+4. Архитектура
+    1. [Компонентная схема](./docs/04-architecture/arch.png)
+    2. [Интеграционная схема](./docs/04-architecture/integration.png)
+    3. [Описание API](./docs/arch/03-api.md)
+    4. [Сущности](./docs/04-architecture/entities.png)
 
-Development questions: [crowdproj-dev](https://t.me/crowdproj_dev)
-
-Startup questions: [crowdproj-com](https://t.me/crowdproj_com)
+# Структура проекта
